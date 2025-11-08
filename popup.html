@@ -1,0 +1,14 @@
+
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PhishGuard</title><link rel="stylesheet" href="styles.css"/></head>
+<body>
+<h3>PhishGuard – Check URL</h3>
+<form id="form"><input id="url" type="text" placeholder="Paste a URL" style="width:100%" required/>
+<div style="height:8px"></div><button type="submit">Analyze</button></form>
+<div id="result" style="margin-top:10px; display:none">
+<div>Risk score: <span id="risk" class="risk"></span>/100</div>
+<progress id="bar" max="100" value="0"></progress>
+<pre id="details" class="mono" style="white-space:pre-wrap"></pre>
+</div>
+<script src="popup.js"></script>
+</body></html>
